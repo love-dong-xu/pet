@@ -1,0 +1,808 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>在线问答</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/online.css" />
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script src="js/jquery.3.2.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body id="online">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <input type="search" class="search" placeholder="&#xe60a; 搜索你想看的内容">
+		    <div id="popover" class="mui-popover">
+		    	<div class="mui-scroll-wrapper">
+		    	    <div class="mui-scroll">
+		    		    <ul class="mui-table-view">
+		    		    	<li class="mui-table-view-cell"><a href="page-question.html">我的提问</a></li>
+		    		    	<li class="mui-table-view-cell"><a href="#">我的回答</a></li>
+		    		    </ul>
+		    		</div>
+		    	</div>
+		    </div>
+		    <a href="#popover" id="openPopover" class="mui-btn mui-btn-primary mui-btn-block">我的</a>
+		</header>
+		<div class="mui-content">
+		    <div class="mui-slider">
+		        <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+		            <a class="mui-control-item mui-active" href="#item1">萌狗</a>
+		            <a class="mui-control-item" href="#item2">雅猫</a>
+		             <a class="mui-control-item" href="#item2">小宠</a>
+		             <a class="mui-control-item" href="#item2">水族</a>
+		             <a class="mui-control-item" href="#item2">爬虫</a>
+		        </div>
+		        <div id="sliderProgressBar" class="mui-slider-progress-bar"></div>
+		        <div class="mui-slider-group">
+		            <div id="item1" class="mui-slider-item mui-control-content mui-active">
+		                <ul class="mui-table-view">
+		                    <li class="cur">最新</li>
+		                    <li>最热</li>
+		                </ul>
+		                <div class="tab-con">
+		                	<div class="content cur">
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="wen">
+			                	<img src="images/wen.png"/>
+			                </div>
+		                </div>
+		                	<div class="content">
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="wen">
+				                	<img src="images/wen.png"/>
+				                </div>
+			                </div>
+		                </div>
+		            </div>
+		            <div id="item2mobile" class="mui-slider-item mui-control-content">
+		                <ul class="mui-table-view">
+		                    <li class="cur">最新</li>
+		                    <li>最热</li>
+		                </ul>
+		                <div class="tab-con">
+		                	<div class="content cur">
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="wen">
+			                	<img src="images/wen.png"/>
+			                </div>
+		                </div>
+		                	<div class="content">
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="wen">
+				                	<img src="images/wen.png"/>
+				                </div>
+			                </div>
+		                </div>	            
+		            </div>
+		            <div class="mui-slider-item mui-control-content">
+		                <ul class="mui-table-view">
+		                    <li class="cur">最新</li>
+		                    <li>最热</li>
+		                </ul>
+		                <div class="tab-con">
+		                	<div class="content cur">
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="wen">
+			                	<img src="images/wen.png"/>
+			                </div>
+		                </div>
+		                	<div class="content">
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="wen">
+				                	<img src="images/wen.png"/>
+				                </div>
+			                </div>
+		                </div>
+		            </div>
+		            <div class="mui-slider-item mui-control-content">
+		                <ul class="mui-table-view">
+		                    <li class="cur">最新</li>
+		                    <li>最热</li>
+		                </ul>
+		                <div class="tab-con">
+		                	<div class="content cur">
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="wen">
+			                	<img src="images/wen.png"/>
+			                </div>
+		                </div>
+		                	<div class="content">
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="wen">
+				                	<img src="images/wen.png"/>
+				                </div>
+			                </div>
+		                </div>
+		            </div>
+		            <div class="mui-slider-item mui-control-content">
+		                <ul class="mui-table-view">
+		                    <li class="cur">最新</li>
+		                    <li>最热</li>
+		                </ul>
+		                <div class="tab-con">
+		                	<div class="content cur">
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="conItem">
+		                		<div class="question">
+		                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+		                			<div class="p-con">
+		                				<span>&#xe62b;</span>
+		                				<span>小宠 </span>
+		                				<span>饲养</span>
+		                				<span>2017-07-22</span>
+		                				<span>13:30</span>
+		                				<span>&#xe630; 26</span>
+		                			</div>
+		                		</div>
+		                		<div class="answer">
+		                			<div class="p-img">
+		                				<div class="img">
+		                					<img src="images/index/mzxb/bzbd1.png"/>
+		                				</div>
+		                				<h2>南山南</h2>
+		                			</div>
+		                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+		                		</div>
+		                	</div>
+		                	<div class="wen">
+			                	<img src="images/wen.png"/>
+			                </div>
+		                </div>
+		                	<div class="content">
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="conItem">
+			                		<div class="question">
+			                			<p>想问一下各位大神，我家兔兔小姐不爱吃提摩西草怎么办？ 小麦草可以代替吗？</p>
+			                			<div class="p-con">
+			                				<span>&#xe62b;</span>
+			                				<span>小宠 </span>
+			                				<span>饲养</span>
+			                				<span>2017-07-22</span>
+			                				<span>13:30</span>
+			                				<span>&#xe630; 26</span>
+			                			</div>
+			                		</div>
+			                		<div class="answer">
+			                			<div class="p-img">
+			                				<div class="img">
+			                					<img src="images/index/mzxb/bzbd2.png"/>
+			                				</div>
+			                				<h2>南山南</h2>
+			                			</div>
+			                			<p>兔子还可以吃：胡萝卜、红薯、洋白菜、黄瓜、萝卜叶子、南 瓜、青菜。喂食蔬菜时必须洗净后沥干水再喂。水果：橘子、 香蕉、葡萄、苹果、草莓。喂食水果……</p>
+			                		</div>
+			                	</div>
+			                	<div class="wen">
+				                	<img src="images/wen.png"/>
+				                </div>
+			                </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	    <script type="text/javascript">
+	    	mui('.mui-scroll-wrapper').scroll();
+	    	$(".mui-content .mui-slider .mui-slider-group .mui-slider-item ul li").click(function(){
+	    		var index=$(this).index();				
+	    				$(this).addClass("cur").siblings().removeClass("cur");
+	    		$(this).parent().next().find(".content").eq(index).addClass("cur").siblings().removeClass("cur");
+	    	});
+	    </script>
+		    
+		   
+	</body>
+</html>

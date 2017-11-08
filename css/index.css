@@ -1,0 +1,174 @@
+
+header{
+	width: 100%;
+	height: 3rem;
+	background: #79C8FF;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items:center;
+}
+header h1{
+	font-size: 1.2rem;
+	color: #fff;
+	font-weight: 400;
+}
+.mui-content .indexNav{
+	margin-bottom: 0.8rem;
+	width: 100%;
+	height: 5rem;
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+}
+.mui-content .indexNav a{
+	display: block;
+	width: 23%;
+	height: 100%;
+}
+.mui-content .indexNav a .p-img{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 60%;
+}
+.mui-content .indexNav a .p-img img{
+	display: block;
+	width: 40%;
+}
+.mui-content .indexNav a h2{
+	height: 20%;
+	text-align: center;
+	font-size: 1rem;
+	color: #4F4F4F;
+	font-weight: 300;
+}
+.mui-content .tab{
+	width: 100%;
+}
+.mui-content .tab .tab-nav{
+	width: 100%;
+	height: 3.5rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items:center;
+	background: #fff;
+}
+.mui-content .tab .tab-nav a{
+	margin: 0 0.5rem;
+	width: 22%;
+	height: 60%;
+	border-radius: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #F2F2F2;
+	color: #C1C1C1;
+}
+.mui-content .tab .tab-nav a.cur{
+	background: #79C8FF;
+	color: #fff;
+}
+.mui-content .tab .tab-con ul{
+	display: none;
+}
+.mui-content .tab .tab-con ul.cur{
+	display: block;
+}
+.mui-content .tab .tab-con ul li{
+	margin-bottom: 0.8rem;
+	width: 100%;
+	background: #fff;
+}
+.mui-content .tab .tab-con ul li .p-img{
+	width: 100%;
+	height: 14rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	overflow:hidden;
+}
+.mui-content .tab .tab-con ul li .p-img video{
+	width: 100%;
+	height: 100%;
+}
+.mui-content .tab .tab-con ul li .p-img .p-imgL{
+	width: 60%;
+	height: 100%;
+}
+.mui-content .tab .tab-con ul li .p-img .p-imgL img{
+	width: 100%;
+}
+.mui-content .tab .tab-con ul li .p-img .p-imgR{
+	width: 39%;
+	height: 100%;
+}
+.mui-content .tab .tab-con ul li .p-img .p-imgR img{
+	margin-bottom: 0.2rem;
+	display: block;
+	width: 100%;
+	height: 6.8rem;
+}
+.mui-content .tab .tab-con ul li h2{
+	padding-left: 2rem;
+	font-size: 1rem;
+	line-height: 2rem;
+	font-weight: 400;
+	color: #3A3A3A;
+}
+.mui-content .tab .tab-con ul li .introduction{
+	width: 100%;
+	height: 3.2rem;
+	padding: 0 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+.mui-content .tab .tab-con ul li .introduction .introductionL,.mui-content .tab .tab-con ul li .introduction .introductionR{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.mui-content .tab .tab-con ul li .introduction .p-tx{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.mui-content .tab .tab-con ul li .introduction .p-tx img{
+	width: 100%;
+}
+.mui-content .tab .tab-con ul li .introduction h3{
+	margin-left: 0.3rem;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #D3D3D3;
+}
+.mui-content .tab .tab-con ul li .introduction .introductionR div{
+	height: 100%;
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+.mui-content .tab .tab-con ul li .introduction .introductionR .zan i,.mui-content .tab .tab-con ul li .introduction .introductionR i{
+	margin:0 0.2rem 0 0.4rem;
+	font-style: normal;
+	font-family: icon;
+	font-size: 1.3rem;
+}
+.mui-content .tab .tab-con ul li .introduction .introductionR .zan i,.mui-content .tab .tab-con ul li .introduction .introductionR .shouchang i{
+	color: #FEA1D0;
+}
+.mui-content .tab .tab-con ul li .introduction .introductionR .message i{
+	color: #333;
+}
+.mui-content .tab .tab-con ul li .introduction .introductionR i
+.mui-content .tab .tab-con ul li .introduction .introductionR span{
+	font-size: 0.8rem;
+	color: #D2D2D2;
+}

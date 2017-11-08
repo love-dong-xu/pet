@@ -1,0 +1,124 @@
+/*萌宠竞赛*/
+.mui-content{
+	background: #fff;
+}
+#mcjs{
+	background: #fff;
+}
+.mui-mcjs-nav{
+	padding: 1rem;
+	display: flex;
+	background: #fff;
+	justify-content: center;
+	border-bottom: 0.09rem solid #ddd;
+}
+.mui-mcjs-nav li:first-of-type{
+	margin-right: .867rem;
+
+}
+ .mui-bar-nav{
+	box-shadow:0 0 0 #ccc;
+ }
+.mui-mcjs-nav li{
+	color: #C1C1C1;
+	background: #F2F2F2;
+	font-weight: 600;
+	font-size: 1.06rem;
+	padding: .5rem 1.7rem;
+	text-align: center;
+	border-radius: 3rem;
+}
+.mui-mcjs-nav li.cur{
+	background: #79c8ff;
+	color: #fff;
+}
+
+.mui-mcjs-list.cur{
+	display: block;
+}
+.mui-mcjs-list{
+	padding: 0 1rem 1rem;
+	background: #fff;
+	display: none;
+}
+.mui-mcjs-list li{
+	width: 100%;
+	overflow: hidden;
+	padding-top: .73rem;
+}
+.mui-mcjs-list li img{
+	width: 100%;
+}
+/*萌宠竞赛详情页*/
+.mcjs-img{
+	width: 100%;
+	padding: .73rem 1rem;
+	border-bottom: .1rem solid #ddd;
+}
+.mcjs-img img{
+	display: block;
+	width: 100%;
+}
+.mcjs-dxhd-xq{
+	padding: 0.73rem 1rem;
+}
+.mcjs-dxhd-xq li h2{
+	font-size: .9rem;
+	color: #3b3a3a;
+	background: #d6eeff;
+	width: 5.66rem;
+	height: 1.76rem;
+	line-height: 1.76rem;
+	text-align: center;
+	border-radius: 2rem;
+}
+.mcjs-dxhd-xq li p{
+	font-size: .75rem;
+	color: #3d3a3a;
+	text-indent: 2em;
+	
+}
+.mcjs-dxhd-form{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.mcjs-dxhd-form input{
+	width: 9.7rem;
+	height: 2.6rem;
+	border-radius: 2rem;
+	background: #f0f0f0;
+	border: none;
+	margin-top: 0.6rem;
+	line-height: 2.6rem;
+}
+.mcjs-dxhd-form input::-webkit-input-placeholder { /* WebKit browsers */
+	color:#d9d9d9;
+	text-align: center;
+	font-size: .9rem;
+}
+.mcjs-dxhd-form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:#d9d9d9;
+	text-align: center;
+	font-size: .9rem;
+}
+.mcjs-dxhd-form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:#d9d9d9;
+	text-align: center;
+	font-size: .9rem;
+}
+.mcjs-dxhd-form input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color:#d9d9d9;
+	text-align: center;
+	font-size: .9rem;
+}
+.mcjs-dxhd-form button{
+	width: 100%;
+	border: none;
+	background: #79c8ff;
+	padding: 1rem 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 1.2rem;
+}

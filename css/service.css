@@ -1,0 +1,140 @@
+.header{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	width: 100%;
+	height: 3rem;
+	background: #79C8FF;
+}
+.header .search{
+	margin-top: 1rem;
+	display: block;
+	width: 80%;
+	height: 2rem;
+	font-size: 0.82rem;
+	background: #fff;
+	border-radius: 1rem;
+	font-family: icon;
+	text-align: left;
+}
+.header .search:after{
+	content: '/e61c';
+	display: block;
+	font-family: icon;
+}
+.header span{
+	color: #fff;
+}
+.serviceMain .conNav{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items:center;
+	width: 100%;
+	height: 3.125rem;
+	background: #fff;
+}
+.serviceMain .conNav a{
+	margin: 0 1rem;
+	display: block;
+	width: 28%;
+	height: 1.875rem;
+	line-height: 1.875rem;
+	font-size: 0.9rem;
+	color: #8E8E8E;
+	text-align: center;
+	background: #F2F2F2;
+	border-radius: 1rem;
+}
+.serviceMain .conNav a.cur{
+	background: #79C8FF;
+	color: #fff;
+}
+.serviceMain .content .cwmr{
+	display: none;
+}
+.serviceMain .content .cwmr.cur{
+	display: block;
+}
+.serviceMain .content a{
+	margin-top: 0.1rem;
+	display: block;
+	width: 100%;
+	height: 7.5rem;
+	padding: 0.625rem 2.5%;
+	background: #fff;
+}
+.serviceMain .content a .p-img{
+	float: left;
+	width: 34%;
+	height: 6.25rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+.serviceMain .content a .p-img img{
+	width: 100%;
+}
+.serviceMain .content a .p-con{
+	float: left;
+	width: 66%;
+	height: 6.25rem;
+	padding-left: 0.5rem;
+}
+.serviceMain .content a .p-con h2{
+	font-size:0.94rem;
+	line-height: 1.5rem;
+	color: #3B393A;
+	font-weight: 500;
+}
+.serviceMain .content a .p-con .pj{
+	display:flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 1rem;
+	overflow: hidden;
+}
+.serviceMain .content a .p-con .pj p{
+	font-size: 0.8rem;
+	line-height: 1rem;
+}
+.serviceMain .content a .p-con .pj p i{
+	font-family: icon;
+	color: #C1C1C1;
+	font-style: normal;
+}
+.serviceMain .content a .p-con .pj p i.cur{
+	color: #79C8FF;
+}
+.serviceMain .content a .p-con .yhq{
+	margin: 0.5rem 0;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	width: 2.78rem;
+	height: 1rem;
+	border-radius: 0.5rem;
+	background: #79C8FF;
+	font-size: 0.625rem;
+}
+.serviceMain .content a .p-con .address{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 1.5rem;
+}
+.serviceMain .content a .p-con .address p{
+	line-height: 1.5rem;
+	font-size: 0.9rem;
+}
+.serviceMain .content a .p-con .address p:last-child{
+	color: #79C9FC;
+	font-size: 1.2rem;
+}
+.serviceMain .content a .p-con .address p:last-child span{
+	font-size: 1.1rem;
+	font-weight: 600;
+}
